@@ -15,6 +15,7 @@
 ```text
 # slide 2
 ２ページ目
+ :
 
 --
 
@@ -220,6 +221,40 @@ css
 
 ---
 # slide 12
+class は、入れ子も、並列も可能
+
+.left-column[
+.hoge[
+入れ子
+```text
+.left-column[
+.hoge[
+入れ子
+]
+]
+```
+```html
+<div class="left-column">
+  <div class="hoge">
+    <p>入れ子</p>
+```
+]
+]
+.right-column.hoge[
+並列
+```text
+.right-column.hoge[
+並列
+]
+```
+```html
+<div class="right-column hoge">
+  <p>並列</p>
+```
+]
+
+---
+# slide 13
 
 css を記載すれば、２列表示も可能
 
@@ -253,7 +288,7 @@ css を記載すれば、２列表示も可能
 ]
 
 ---
-# slide 13
+# slide 14
 
 .center[
 おしまい
